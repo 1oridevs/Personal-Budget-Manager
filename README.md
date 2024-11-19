@@ -36,4 +36,7 @@ A modern personal budget manager app to track income, expenses, and savings. Fea
 
 ## 📧 Contact
 **GitHub**: @1oridevs
+
 **Email**: oridevs.offical@gmail.com
+
+---
