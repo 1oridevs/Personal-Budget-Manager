@@ -1,0 +1,26 @@
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 5px;
+  }
+  
+  .filters select,
+  .filters input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
