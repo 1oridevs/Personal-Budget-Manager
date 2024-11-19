@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './TransactionForm.css';
 
 function TransactionForm({ addTransaction }) {
   const [type, setType] = useState('income');
@@ -24,7 +25,7 @@ function TransactionForm({ addTransaction }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="transaction-form" onSubmit={handleSubmit}>
       <label>
         Type:
         <select value={type} onChange={(e) => setType(e.target.value)}>

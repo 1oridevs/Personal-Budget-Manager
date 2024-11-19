@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 
 function Header({ budget, setBudget, transactions }) {
   const totalExpenses = transactions
@@ -10,8 +11,8 @@ function Header({ budget, setBudget, transactions }) {
     .reduce((sum, t) => sum + t.amount, 0);
 
   return (
-    <header>
-      <h1>Personal Budget Manager</h1>
+    <header className="header">
+      <h1>💰 Personal Budget Manager</h1>
       <div className="budget-summary">
         <div>
           <h3>Total Income:</h3>
@@ -26,7 +27,7 @@ function Header({ budget, setBudget, transactions }) {
           <p>${(budget - totalExpenses).toFixed(2)}</p>
         </div>
       </div>
-      <div>
+      <div className="set-budget">
         <label>
           Set Budget:
           <input
